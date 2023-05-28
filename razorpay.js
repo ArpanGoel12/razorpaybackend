@@ -58,6 +58,7 @@ app.post("/api/payment/verify",(req,res)=>{
      });
    
 
-  app.listen(4000,(req,res)=>{
+const port=process.env.PORT||4000;
+  app.listen(port,(req,res)=>{
     console.log("kistening on port 4000");
 });
